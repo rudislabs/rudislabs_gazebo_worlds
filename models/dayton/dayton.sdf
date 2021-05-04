@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <model name="dayton_model"> <!-- BUILDING VEHICLE START: [10, 3210, 0.5, 0, 0, 0] -->
+    <pose>0 0 0 0 0 0</pose> <!--LLA: 51.4287125, 5.4731848, 17.0-->
+    <static>true</static>
+    <link name="dayton_link">
+      <visual name="visual">
+        <geometry>
+          <mesh><uri>model://dayton/dayton_media/dayton.dae</uri></mesh>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <mesh><uri>model://dayton/dayton_media/dayton.dae</uri></mesh>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+      </collision>
+    </link>
+  </model>
+</sdf>
