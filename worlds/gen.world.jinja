@@ -99,6 +99,16 @@ Generated with jinja_world_gen.py
     {%- set altitude='225.0' -%}
     {%- set use_spherical_coords='1' -%}
   {%- endif %}
+  {%- if world_name == 'dc' %}
+    <include>
+      <uri>model://dc</uri>
+      <pose>0 0 -45 0 0 0</pose>
+    </include>
+    {%- set latitude='38.9087704' -%}
+    {%- set longitude='-77.0330487' -%}
+    {%- set altitude='50.0' -%}
+    {%- set use_spherical_coords='1' -%}
+  {%- endif %}
   {%- if wind_speed != 'NotSet' %}
     <plugin name='wind_plugin' filename='libgazebo_wind_plugin.so'>
       <frameId>base_link</frameId>

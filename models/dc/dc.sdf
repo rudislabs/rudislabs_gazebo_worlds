@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <model name="dayton_model"> <!-- RANDOM BUILDING VEHICLE START: [0, 0, 0, 0, 0, 0] -->
-    <pose>0 0 0 0 0 0</pose> <!--LLA: 39.760375, -84.141110, 225.0-->
+  <model name="dc_model"> <!-- RANDOM BUILDING VEHICLE START: [-550, 3638, 52.0, 0, 0, 0] -->
+    <pose>0 0 0 0 0 0</pose> <!--LLA: 38.9087704, -77.0330487, 50.0 -->
     <static>true</static>
-    <link name="dayton_link">
+    <link name="dc_link">
       <visual name="visual">
         <geometry>
-          <mesh><uri>model://dayton/dayton_media/dayton.dae</uri></mesh>
+          <mesh><uri>model://dc/dc_media/dc.dae</uri></mesh>
         </geometry>
         <pose>0 0 0 0 0 0</pose>
       </visual>
       <collision name="collision">
         <geometry>
-          <mesh><uri>model://dayton/dayton_media/dayton.dae</uri></mesh>
+          <mesh><uri>model://dc/dc_media/dc.dae</uri></mesh>
         </geometry>
         <pose>0 0 0 0 0 0</pose>
       </collision>

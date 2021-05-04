@@ -20,6 +20,7 @@ default_filename = os.path.relpath(os.path.join(default_world_path, "gen.world.j
 default_sdf_world_dict = {
     "empty": 1.7,
     "dayton": 1.7,
+    "dc": 1.7,
     "canvas": 1.7
 }
 
