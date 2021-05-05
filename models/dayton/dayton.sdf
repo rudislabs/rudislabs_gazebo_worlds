@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.7">
-  <model name="dayton_model"> <!-- RANDOM BUILDING VEHICLE START: [0, 0, 0, 0, 0, 0] -->
+  <model name="dayton_model"> <!-- RANDOM BUILDING VEHICLE START: [-3495, 601, -11.0, 0, 0, 0] -->
     <pose>0 0 0 0 0 0</pose> <!--LLA: 39.760375, -84.141110, 225.0-->
     <static>true</static>
     <link name="dayton_link">
