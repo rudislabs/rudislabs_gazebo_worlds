@@ -14,6 +14,8 @@ rel_model_path ="../models"
 script_path = os.path.realpath(__file__).replace("pull_media.py","")
 model_path = os.path.realpath(os.path.relpath(os.path.join(script_path, rel_model_path)))
 
+update_flag=str(os.path.join(model_path,'.dlm'))
+
 cities = next(os.walk(model_path))[1]
 
 for city in cities:
@@ -31,3 +33,6 @@ for city in cities:
         with zipfile.ZipFile(zip_media, 'r') as zip_ref:
             zip_ref.extractall(unzip_media_path)
         print('Finished Extracting to: {:s}'.format(unzip_media_path))
+
+if not os.path.isfile(update_flag):
+    open(update_flag, 'w')
